@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+p{
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+
+h1,h2,h3{
+    font-family: "Fira Sans", serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+}
+
+.navbar{
+    background-color: rgb(238, 221, 124);
+    
+}
+.nav-link{
+    color: rgb(0, 0, 0);
+}
+.nav-link:hover{
+    color: rgb(88, 92, 33);
+}
+.navbar-nav{
+    text-align: center;
+}
+.sin{
+    padding: 0;
+    margin: 0;
+}
+
+.botonesReserva{
+    color: rgb(0, 0, 0);
+    transition: transform 0.3s ease;
+}
+
+.botonesReserva:hover{
+    color: rgb(71, 43, 11);
+    transform: scale(1.1);
+}
+
+a{
+    text-decoration: none;
+}
+
+.parrafoPresentacion{
+    background: linear-gradient(to bottom,  rgb(250, 181, 91), rgb(236, 211, 66));
+}
+
+.parrafoServicios{
+    background-color: rgb(236, 167, 76);
+}
+
+.textoPresentacion{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.textoServicios{
+    margin: 0 15% 10% 15%
+}
+
+.fondoPagina{
+    background: linear-gradient(to bottom, rgb(243, 175, 120), rgb(199, 221, 138));
+
+}
+
+.fondopie{
+    background-color: rgba(31, 102, 46, 0.801);
+    color: white;
+}
+
+.fondo1{
+    background-color: rgb(248, 56, 56);
+}
+
+.fondo2{
+    background-color: rgb(248, 56, 56);
+}
+
+.servicios{
+    width: 80%;
+    margin: 10%;
+    transition: transform 0.3s ease;
+}
+
+.servicios:hover{
+    transform: scale(1.1);
+}
