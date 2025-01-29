@@ -1,9 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-p{
+p, form,ul{
     font-family: "Roboto", serif;
     font-optical-sizing: auto;
     font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+
+form{
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
     font-style: normal;
     font-variation-settings:
       "wdth" 100;
@@ -66,6 +75,21 @@ a{
     margin: 0 15% 10% 15%
 }
 
+.camposFormulario{
+    margin-top: 5%;
+    margin-bottom: 6%;
+}
+
+.textoFormulario{
+    margin-top: 2%;
+    margin-left: 30%;
+
+}
+
+/*
+NO SOY BUENO ELIGIENDO COLORES PAREZCO DALTÓNICO, SI SE TE OCURRE ALGO MEJOR (SEGURAMENTE CUALQUIER COSA) CAMBIALO
+*/
+
 .fondoPagina{
     background: linear-gradient(to bottom, rgb(243, 175, 120), rgb(199, 221, 138));
 
@@ -76,12 +100,8 @@ a{
     color: white;
 }
 
-.fondo1{
-    background-color: rgb(248, 56, 56);
-}
-
-.fondo2{
-    background-color: rgb(248, 56, 56);
+.fondoFormulario{
+    background-color:lightcoral;
 }
 
 .servicios{
@@ -92,4 +112,16 @@ a{
 
 .servicios:hover{
     transform: scale(1.1);
+}
+
+.mapa{
+    margin: 5%;
+}
+
+.textoPie{
+    font-weight: 100px;
+}
+
+ul{
+    list-style-type: none
 }

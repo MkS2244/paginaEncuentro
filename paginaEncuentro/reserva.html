@@ -40,56 +40,106 @@
 
         <!-------Formulario de registro------------->
 
-        <div class="row">
+        <div class="row d-flex justify-content-center fondoFormulario">
             <div class="col-10">
                 <h2 class="mt-4">Formulario de Reserva</h2>
                 <form>
-                    <div class="mb-3">
-                        <label for="nombre" class="form-label">Nombre completo</label>
-                        <input type="text" class="form-control" id="nombre" placeholder="Nombre y apellidos" required>
-                    </div>
-        
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Correo electrónico</label>
-                        <input type="text" class="form-control" id="email" placeholder="Ingrese su correo electrónico" required>
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="telefono" class="form-label">Número de teléfono</label>
-                        <input type="text" class="form-control" id="telefono" placeholder="Ingrese su número de teléfono" required>
-                    </div>
-        
-                    <div class="mb-3">
-                        <label for="fecha" class="form-label">Fecha de reserva</label>
-                        <input type="date" class="form-control" id="fecha" required>
-                    </div>
-        
-                    <div class="mb-3">
-                        <label for="hora" class="form-label">Hora de reserva</label>
-                        <input type="text" class="form-control" id="hora" required>
-                    </div>
-        
-                    <div class="mb-3">
-                        <label for="comentarios" class="form-label">Comentarios adicionales</label>
-                        <textarea class="form-control" id="comentarios" rows="3" placeholder="Escriba algún comentario (opcional)"></textarea>
+                    <div class="row camposFormulario">
+                        <div class="col-3">
+                            <label for="nombre" class="form-label textoFormulario">Nombre y apellidos</label>
+                        </div>
+                        <div class="col-9">
+                            <input type="text" class="form-control" id="nombre" placeholder="Nombre y apellidos" required>
+                        </div>
                     </div>
 
-                    <button type="submit" class="mb-4">Reservar</button>
+                    <div class="row camposFormulario">
+                        <div class="col-3">
+                            <label for="email" class="form-label textoFormulario">Correo electrónico</label>
+                        </div>
+                        <div class="col-9">
+                            <input type="text" class="form-control" id="email" placeholder="Ingrese su correo electrónico" required>
+                        </div>
+                    </div>
+
+                    <div class="row camposFormulario">
+                        <div class="col-3">
+                            <label for="telefono" class="form-label textoFormulario">Número de teléfono</label>
+                        </div>
+                        <div class="col-9">
+                            <input type="text" class="form-control" id="telefono" placeholder="Ingrese su número de teléfono" required>
+                        </div>
+                    </div>
+
+                    <div class="row camposFormulario">
+                        <div class="col-3">
+                            <label for="servicios" class="form-label textoFormulario">Servicio a reservar</label>
+                        </div>
+                        <div class="col-9">
+                            <select name="servicios" id="servicios" class="form-select">
+                                <option value="servicio1">Servicio1</option>
+                                <option value="servicio2">Servicio2</option>
+                                <option value="servicio3">Servicio3</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row camposFormulario">
+                        <div class="col-3">
+                            <label for="fecha" class="form-label textoFormulario">Fecha de reserva</label>
+                        </div>
+                        <div class="col-9">
+                            <input type="date" class="form-control" id="fecha" required>
+                        </div>
+                    </div>
+
+                    <div class="row camposFormulario">
+                        <div class="col-3">
+                            <label for="hora" class="form-label textoFormulario">Hora de reserva</label>
+                        </div>
+                        <div class="col-9">
+                            <input type="text" class="form-control" id="hora" required>
+                        </div>
+                    </div>
+
+                    <div class="row camposFormulario">
+                        <div class="col-3">
+                            <label for="comentarios" class="form-label textoFormulario">Comentarios sobre la reserva</label>
+                        </div>
+                        <div class="col-9">
+                            <textarea class="form-control" id="comentarios" rows="3" placeholder="Escriba algún comentario (opcional)"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="row camposFormulario">
+                        <div class="col-12 text-center">
+                            <button type="submit" class="btn btn-primary">Reservar</button>
+                        </div>
+                    </div>
                 </form>
             </div>
         </div>
 
         <!---------Pié de página------------->
         <div class="row">
-            <div class="col-12 col-sm-6 d-flex align-items-center fondopie">
-                <img class="w-50" src="img/placeholder.webp" alt="Mapa">
-            </div>
-            <div class="col-12 col-sm-6 fondopie">
-                <h2>Contacto</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, voluptatum veritatis reiciendis
-                    cupiditate
-                    asperiores ea esse nemo animi. Voluptates ipsum et asperiores sapiente excepturi fugit nostrum
-                    tenetur fugiat repellat quidem!</p>
+            <div class="col-12 d-flex align-items-center fondopie">
+                <div class="row">
+                    <div class="col-4 ">
+                        <img class="w-50 mapa" src="img/placeholder.webp" alt="Mapa">
+                    </div>
+                    <div class="col-4 textoPie d-flex align-items-center">
+                        <ul>
+                            <li>Teléfono:lorem</li>
+                            <li>Email: ipsum</li>
+                            <li>Dirección: Calle noseke</li>
+                        </ul>
+                    </div>
+                    <div class="col-4 d-flex align-items-center">
+                        <a href="https://www.instagram.com/"><img src="img/instagram.png" alt=""></a>
+                        <a href="https://x.com"><img src="img/twitter.png" alt=""></a>
+                        <a href="https://www.tiktok.com"><img src="img/tiktok.png" alt=""></a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
